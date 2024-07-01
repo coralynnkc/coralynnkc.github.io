@@ -60,12 +60,12 @@ COUNTERFACTUAL DEPENDENCE:
 
 Potential outcomes:
 
-|                                    | $E[Y_1\|T=1]$                         | $E[Y_0\|T=0]$                           | $E[Y_1]\| T=0$                                                             | $E[Y_0\| T=1]$                                                             |
+|                                    | $E[Y_1\|T=1]$                         | $E[Y_0\|T=0]$                           | $E[Y_1\| T=0]$                                                             | $E[Y_0\| T=1]$                                                             |
 | ---------------------------------- | ------------------------------------- | --------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | Description                        | Average outcome <br> in treated group | Average outcome <br> in untreated group | Average outcome <br> in treated group <br> if they had <br> been untreated | Average outcome <br> in untreated group <br> if they had <br> been treated |
 | Observable or <br> counterfactual? | Observable                            | Observable                              | Counterfactual                                                             | Counterfactual                                                             |
 
-The 'fundamental problem of causal inference'. $Y_1 - Y_0$ is unobservable.
+The FUNDAMENTAL PROBLEM of causal inference. $Y_1 - Y_0$ is unobservable.
 
 At best, able to measure AVERAGE CAUSAL EFFECTS.
 
