@@ -1,16 +1,12 @@
 ---
 layout: note
 type: note
-title: linear
+title: Linear Algebra
 ---
 
-# LINEAR ALGEBRA - CORA
+# 1.1.1 - SYSTEMS OF LINEAR EQUATIONS
 
-[toc]
-
-## 1.1.1 - SYSTEMS OF LINEAR EQUATIONS
-
-### WRITING SYSTEM
+## WRITING SYSTEM
 
 Instead of multiple variables, only $x$ is used.
 
@@ -35,7 +31,7 @@ $$
 \end{array}\right]
 $$
 
-#### SOLUTION 1
+### SOLUTION 1
 
 $$
 \begin{array}{c c c c c c}
@@ -48,7 +44,7 @@ $$
 
 $$x_1 = 4$$
 
-#### SOLUTION 2
+### SOLUTION 2
 
 $$
 \left[\begin{array}{cc:c}
@@ -97,7 +93,7 @@ $$x_1 = 4$$
 
 $$x_2 = 1$$
 
-### TERMINOLOGY
+## TERMINOLOGY
 
 LINEAR EQUATION. An equation that can be written as $a_1x_1 + a_2x_2 + a_3x_3 + ... + a_nx_n = b$
 
@@ -109,13 +105,13 @@ SOLUTION. A list of numbers $(S_1, S_2, S_3...)$ that makes each equation in the
 
 SOLUTION SET. The set of all possible solutions to a system.
 
-### TYPES OF SYSTEMS
+## TYPES OF SYSTEMS
 
 INCONSISTENT. No solution.
 
 CONSISTENT. At least one solution.
 
-### ROW OPERATIONS
+## ROW OPERATIONS
 
 REPLACEMENT. Replace one row by the sum of itself and a multiple of another row.
 
@@ -123,7 +119,7 @@ INTERCHANGE. Swap two rows.
 
 SCALING. Multiply a row by a non-zero constant.
 
-### EXAMPLE 1
+## EXAMPLE 1
 
 $$x_1 - 2x_2 + x_3 = 0$$
 
@@ -131,7 +127,7 @@ $$2x_2 - 8x_3 = 8$$
 
 $$-4x_1 + 5x_2 + 9x_3 = -9$$
 
-#### SOLUTION 1
+### SOLUTION 1
 
 $4 * (x_1 - 2x_2 + x_3 = 0) \rightarrow 4x_1 - 8x_2 + 4x_3 = 0$
 
@@ -167,7 +163,7 @@ $x_1 - 2(16) + 3 = 0$
 
 $$x_1 = 29$$
 
-#### SOLUTION 2
+### SOLUTION 2
 
 $$
 \left[\begin{array}{ccc:c}
@@ -249,7 +245,7 @@ $$
 
 $$x_1 = 29$$
 
-### EXISTENCE AND UNIQUENESS
+## EXISTENCE AND UNIQUENESS
 
 Determine whether the system is CONSISTENT. Does a solution exist.
 
@@ -313,7 +309,7 @@ $$0x_1 + 0x_2 + 0x_3 = 15$$
 
 INCONSISTENT SYSTEM.
 
-### EXAMPLE 2
+## EXAMPLE 2
 
 $$x_1 - 2x_2 + x_3 = 0$$
 $$2x_2 - 8x_3 = 8$$
@@ -399,7 +395,7 @@ $$
 
 $$(1, 0, 1)$$
 
-## 1.1.2 - SOLVE SYSTEMS OF LINEAR EQUATIONS IN AUGMENTED MATRICES USING ROW OPERATIONS
+# 1.1.2 - SOLVE SYSTEMS OF LINEAR EQUATIONS IN AUGMENTED MATRICES USING ROW OPERATIONS
 
 $$x - 2y - 2z = b_1$$
 
@@ -510,7 +506,7 @@ $$
 
 ALL SOLUTIONS. $\overrightarrow{x} = \overrightarrow{x_p} + C * \overrightarrow{x_s}$
 
-## 1.2.1 - ROW REDUCTION AND ECHELON FORM.
+# 1.2.1 - ROW REDUCTION AND ECHELON FORM.
 
 ECHELON FORM. 'TRIANGLE FORM'
 
@@ -528,7 +524,7 @@ PIVOT. Non-zero number in pivot posistion used to create zeros in row operations
 - PIVOT POSITION. Corresponds to the leading 1 in RREF.
 - PIVOT COLUMN. The column that contains the pivot.
 
-### ROW REDUCTION ALGORITHM
+## ROW REDUCTION ALGORITHM
 
 1. Begin at leftmost non-zero column, which is a pivot column. Select a nonzero entry as pivot and interchange. If necdessary, to move that entry into the pivot position (Row 1).
 
@@ -615,7 +611,7 @@ $$
 
 $$(5,3,-1)$$
 
-## 1.2.2 - SOLUTION SETS AND FREE VARIABLES
+# 1.2.2 - SOLUTION SETS AND FREE VARIABLES
 
 $$
 \left[\begin{array}{ccc:c}
@@ -649,7 +645,7 @@ $$x_2 = -6 -2 = -8$$
 
 $$(-29, -8, -6)$$
 
-### FIND THE GENERAL SOLUTION TO THE SYSTEM
+## FIND THE GENERAL SOLUTION TO THE SYSTEM
 
 $$x_1-2x_2-x_3+3x_4=0$$
 
@@ -689,7 +685,7 @@ $$
 
 $0 \neq 5$ - INCONSISTENT SYSTEM.
 
-### EXERCISE 1
+## EXERCISE 1
 
 Find the general solution of the augmented matrix:
 
@@ -732,7 +728,7 @@ $x_2$ is free
 
 $x_3 = 3$
 
-## 1.3.1 - VECTOR EQUATIONS
+# 1.3.1 - VECTOR EQUATIONS
 
 VECTOR. An ordered list of numbers.
 
@@ -753,7 +749,7 @@ OPERATIONS WITH VECTORS. Same as with other matrices:
 - ADDITION. Add corresponding values.
 - MULTIPLICATION. Nope! Dimensions don't work.
 
-### EXAMPLE 1
+## EXAMPLE 1
 
 If
 
@@ -830,7 +826,7 @@ $$
 
 ![example one b](images/fiveexoneb.png)
 
-### VECTORS IN $\mathbb{R}^n$
+## VECTORS IN $\mathbb{R}^n$
 
 If $n \in \mathbb{R}$, then $\mathbb{R}^n$ is the collection of all lists of ordered n-tuples of n real numbers written as $n*1$ column matrices.
 
@@ -857,7 +853,7 @@ $$
 \end{array}\right]
 $$
 
-### ALGEBRAIC PROPERTIES OF $\mathbb{R}^n$
+## ALGEBRAIC PROPERTIES OF $\mathbb{R}^n$
 
 These properties correspond to properties of real numbers and pertain to vectors $u$, $v$ and $w$ and scalars $c$ and $d$.
 
@@ -877,7 +873,7 @@ DISTRIBUTIVE PROPERTY. $c(d \overrightarrow{u}) = (cd)\overrightarrow{u}$
 
 IDENTITY PROPERTY. $1 \overrightarrow{u} = \overrightarrow{u}$
 
-### EXERCISE 1
+## EXERCISE 1
 
 Let
 
@@ -897,7 +893,7 @@ Display the vectors $\overrightarrow{u}, 2 \overrightarrow{u}$ and $\frac{1}{2} 
 
 ![exercise one c](images/fiveextwoc.png)
 
-## 1.3.2 - LINEAR COMBINATIONS
+# 1.3.2 - LINEAR COMBINATIONS
 
 The vector defined by $y = c_1v_1 + c_2v_2 + ... + c_nv_n$ where $c_i$ are scalars and $v_i$ are vectors is called a linear combination of $\overrightarrow{v_1}, \overrightarrow{v_2}, ... \overrightarrow{v_n}$ with weights $c_1, c_2, ..., c_n$.
 
@@ -929,7 +925,7 @@ $\overrightarrow{u} = 2v_1 - v_2$
 
 $\overrightarrow{w} =  -\frac{1}{4}v_1 + \frac{5}{3}v_2$
 
-### EXAMPLE 1
+## EXAMPLE 1
 
 If
 
@@ -1077,7 +1073,7 @@ $$
 \end{array}\right]
 $$
 
-### SPANS
+## SPANS
 
 A vector equation $x_1\overrightarrow{a_1} + x_2 \overrightarrow{a_2} + ... + x_n \overrightarrow{a_n} = \overrightarrow{b}$ has the same solution set as the linear system whose augmented matrix is $[\overrightarrow{a_1},\overrightarrow{a_2}...\overrightarrow{a_n}|\overrightarrow{b}]$. Therefore, a vector equation only has a solution if the system is consistent.
 
@@ -1143,7 +1139,7 @@ $$
 
 NO SOLUTION.
 
-### EXERCISE 1
+## EXERCISE 1
 
 A mining company has two mines. One days operation at mine 1 produces ore that contains 20 metric tons of copper and 550 kg of silver. Mine 2 produces 30 metric tons of copper and 500 kg of silver. How many days should each mine operate to produce 150 tons copper and 2825 kg silver?
 
@@ -1199,7 +1195,7 @@ Mine 1: 1.5 days
 
 Mine 2: 4 days
 
-### EXERCISE 2
+## EXERCISE 2
 
 Let
 
@@ -1275,7 +1271,7 @@ $h = -17$
 
 $h$ must be $-17$ for $b$ to be in the span $\{a_1,a_2\}$
 
-## 1.4.1 - THE MATRIX EQUATION $Ax=b$
+# 1.4.1 - THE MATRIX EQUATION $Ax=b$
 
 If $A$ is a $m \times n$ matrix with columns $a_1, a_2, ..., a_n$ and if $x \in \mathbb{R}^n$ then $Ax$ is the linear combination of the columns of $A$ using the corresponding entires in $x$ as weights:
 
@@ -1295,7 +1291,7 @@ $A$ is $1 \times n$.
 
 The vector is $n \times 1$.
 
-### EXAMPLE 1
+## EXAMPLE 1
 
 Find $Ax$ if:
 
@@ -1358,7 +1354,7 @@ $$
 \end{array}\right]
 $$
 
-### EXAMPLE 2
+## EXAMPLE 2
 
 Write the linear combination $2v_1 - 3v_2 + 4v_3$ as a matrix times a vector.
 
@@ -1374,7 +1370,7 @@ v_1 & v_2 & v_3
 \end{array}\right]
 $$
 
-### REPRESENTATIONS
+## REPRESENTATIONS
 
 SYSTEM OF EQUATIONS:
 
@@ -1432,7 +1428,7 @@ x_3 \\
 \end{array}\right]
 $$
 
-### EXISTENCE OF SOLUTIONS
+## EXISTENCE OF SOLUTIONS
 
 Let $A$ be a $m \times n$ matrix. Then these statements are logically equivalent:
 
@@ -1442,7 +1438,7 @@ Let $A$ be a $m \times n$ matrix. Then these statements are logically equivalent
 4. $A$ has a pivot position in every row.
    - $A$ must be a coefficient matrix - not augmented.
 
-### EXERCISE 1
+## EXERCISE 1
 
 $$
 \text{Let } A=
@@ -1480,13 +1476,13 @@ $$
 
 INCONSISTENT
 
-## 1.4.2 - COMPUTATION OF $Ax$
+# 1.4.2 - COMPUTATION OF $Ax$
 
-### ROW-VECTOR RULE FOR COMPUTING $Ax$
+## ROW-VECTOR RULE FOR COMPUTING $Ax$
 
 If $Ax$ is defined, the $i^{th}$ entry in $Ax$ is the sum of the products of corresponding entires from row $i$ of $a$ and from the vector $x$.
 
-### EXERCISE 1
+## EXERCISE 1
 
 $$
 \text{Given } A=
@@ -1605,7 +1601,7 @@ $$
 \end{array}\right]
 $$
 
-### EXERCISE 2
+## EXERCISE 2
 
 $$
 \text{Given } A=
