@@ -526,7 +526,7 @@ PIVOT. Non-zero number in pivot posistion used to create zeros in row operations
 
 ## ROW REDUCTION ALGORITHM
 
-1. Begin at leftmost non-zero column, which is a pivot column. Select a nonzero entry as pivot and interchange. If necdessary, to move that entry into the pivot position (Row 1).
+1\. Begin at leftmost non-zero column, which is a pivot column. Select a nonzero entry as pivot and interchange. If necdessary, to move that entry into the pivot position (Row 1).
 
 $$x_1 - 3x_3 = 8$$
 
@@ -542,7 +542,7 @@ $$
 \end{array}\right]
 $$
 
-2. Use Row operations to create zeroes in entries below the pivot.
+2\. Use Row operations to create zeroes in entries below the pivot.
 
 $-2R_1 + R_2 \rightarrow R_2$
 
@@ -554,7 +554,7 @@ $$
 \end{array}\right]
 $$
 
-3. Repeat this process for remaining rows, ignoring rows you've already applied the algorithm to.
+3\. Repeat this process for remaining rows, ignoring rows you've already applied the algorithm to.
 
 $\frac{1}{2}R_2 \rightarrow R_2$
 
@@ -586,8 +586,8 @@ $$
 \end{array}\right]
 $$
 
-4. Ensure each pivot is a 1, using scaling as necessary.
-5. Beginning with the rightmost pivot and working upwards and to the left, use row operations to create zeroes above each pivot.
+4\. Ensure each pivot is a 1, using scaling as necessary.
+5\. Beginning with the rightmost pivot and working upwards and to the left, use row operations to create zeroes above each pivot.
 
 $-\frac{15}{2}R_3 + R_2 \rightarrow R_2$
 
@@ -751,19 +751,14 @@ OPERATIONS WITH VECTORS. Same as with other matrices:
 
 ## EXAMPLE 1
 
-If
-
 $$
+\text{If }
 \overrightarrow{u} =
 \left[\begin{array}{c}
 2 \\
 3 \\
 \end{array}\right]
-$$
-
-and
-
-$$
+\text {and }
 \overrightarrow{v} =
 \left[\begin{array}{c}
 -1 \\
@@ -875,9 +870,8 @@ IDENTITY PROPERTY. $1 \overrightarrow{u} = \overrightarrow{u}$
 
 ## EXERCISE 1
 
-Let
-
 $$
+\text{Let }
 \overrightarrow{u} =
 \left[\begin{array}{c}
 -5 \\
@@ -897,19 +891,14 @@ Display the vectors $\overrightarrow{u}, 2 \overrightarrow{u}$ and $\frac{1}{2} 
 
 The vector defined by $y = c_1v_1 + c_2v_2 + ... + c_nv_n$ where $c_i$ are scalars and $v_i$ are vectors is called a linear combination of $\overrightarrow{v_1}, \overrightarrow{v_2}, ... \overrightarrow{v_n}$ with weights $c_1, c_2, ..., c_n$.
 
-If
-
 $$
+\text{If }
 \overrightarrow{v_1} =
 \left[\begin{array}{c}
 1 \\
 5 \\
 \end{array}\right]
-$$
-
-and
-
-$$
+\text{and }
 \overrightarrow{v_2} =
 \left[\begin{array}{c}
 -3 \\
@@ -927,31 +916,22 @@ $\overrightarrow{w} =  -\frac{1}{4}v_1 + \frac{5}{3}v_2$
 
 ## EXAMPLE 1
 
-If
-
 $$
+\text{If }
 \overrightarrow{v_1} =
 \left[\begin{array}{c}
 1 \\
 -2 \\
 -5 \\
 \end{array}\right]
-$$
-
-and
-
-$$
+\text{and }
 \overrightarrow{v_2} =
 \left[\begin{array}{c}
 2 \\
 5 \\
 6 \\
-\end{array}\right]
-$$
-
-determine whether
-
-$$
+\end{array}\right],
+\text{,determine whether }
 b =
 \left[\begin{array}{c}
 7 \\
@@ -1094,11 +1074,7 @@ $$
 -13 \\
 -3 \\
 \end{array}\right]
-$$
-
-and
-
-$$
+\text{and }
 \overrightarrow{b} =
 \left[\begin{array}{c}
 -3 \\
@@ -1197,9 +1173,8 @@ Mine 2: 4 days
 
 ## EXERCISE 2
 
-Let
-
 $$
+\text{Let }
 a_1 =
 \left[\begin{array}{c}
 1 \\
@@ -1212,11 +1187,7 @@ a_1 =
 -3 \\
 7 \\
 \end{array}\right]
-$$
-
-and
-
-$$
+\text{and }
 b =
 \left[\begin{array}{c}
 4 \\
