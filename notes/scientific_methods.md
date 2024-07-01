@@ -4,7 +4,7 @@ type: note
 title: Scientific Methods
 ---
 
-# 1 - Philosophies of Correlation
+# 1. Philosophies of Correlation
 
 Extent to which two features of the world tend to occur together.
 
@@ -70,13 +70,13 @@ Other problems:
 1. Proximity. 'What is the cause of World War II' is unanswerable.
 2. Unanswerable questions. It's impossible to answer what the effect will be on an individual, only for a population based on a representative sample.
 
-# 2 - Always Compare
+# 2. Always Compare
 
 Correlation does not imply causation.
 
 SELECTING ON THE DEPENDENT VARIABLE. Including observations only with particular outcomes.
 
-# 3 - A Useful Equation
+# 3. A Useful Equation
 
 Estimate = Estimand + Bias + Noise
 
@@ -117,7 +117,7 @@ $$
 \bar{Y}_{1, T=1} - \bar{Y}_{0, T=0} = \bar{Y}_{1, T=0} - \bar{Y}_{0, T=0} \rightarrow \bar{Y}_{1, T=1} = \bar{Y}_{1, T=0}
 $$
 
-# 4 - Bias & Noise
+# 4. Bias & Noise
 
 ## BIAS
 
@@ -155,7 +155,7 @@ $$
 \widehat{SE} = \sqrt{\frac{\widehat{Var(Y_0)}}{N-m}+\frac{\widehat{Var(Y_1)}}{m}}
 $$
 
-# 5 - Experiments
+# 5. Experiments
 
 ## CONFIDENCE INTERVALS
 
@@ -215,7 +215,7 @@ CONTAMINATION. Treatment subjects become control and vice versa.
 
 SPILLOVER. Treatment affects those in control.
 
-# 6 - Regression
+# 6. Regression
 
 Using observational data to mimic an experiment - once we control for enough things / make the comparison groups similar enough, the difference between the treatment & control groups is functionally random.
 
@@ -270,7 +270,7 @@ Problems:
 1. How do we know we've controlled for all the relevant differences?
 2. Some of the differences are unobservable and/or don't have very good proxies.
 
-# 7 - Difference-in-Difference
+# 7. Difference-in-Difference
 
 Problem: Things change over time.
 
@@ -296,7 +296,7 @@ $$
 
 It CANNOT account for time-variant differences between units.
 
-# 8 - Regression Discontinuity
+# 8. Regression Discontinuity
 
 Used when cutoffs on a RUNNING VARIABLE splits units into treated and untreated groups.
 
@@ -321,7 +321,7 @@ $$
 
 Violation if units have control over whether they're on either side of the threshold, indicated by BUNCHING or CLUMPING.
 
-# 9 - Instrumental Variables
+# 9. Instrumental Variables
 
 Solution to noncompliance or natural experiments.
 
@@ -351,7 +351,7 @@ $$
 
 - COMPLIER AVERAGE TREATMENT EFFECT (CATE) \* proportion of compliers.
 
-# 10 - Bayesian Inference
+# 10. Bayesian Inference
 
 PROBABILITY. Chance that an event occurs. $P(A)$
 
@@ -400,7 +400,7 @@ $$
 - $P(\text{effect})$ and $P(\text{no effect})$= prior.
 - $P(\text{estimate}|\text{no effect})$ = p-value.
 
-# 11 - Multiple Testing
+# 11. Multiple Testing
 
 SELECTIVE REPORTING and PUBLICATION BIAS mean that only meaningful results are published. That can result in bad science, either due to noise or manipulation.
 
@@ -416,11 +416,11 @@ Solutions include:
 4. Important hypotheses.
 5. Skepticism.
 
-# 12 - Reversion to the Mean
+# 12. Reversion to the Mean
 
 Any outcome that's partly a function of signal and noise demonstrates reversion to the mean, because extremes are a combination of strong signal and strong noise.
 
-# 13 - Adaptation
+# 13. Adaptation
 
 People change their behavior in response to changes in the world.
 
@@ -429,7 +429,7 @@ Problems:
 1. Studying the wrong outcome.
 2. Extrapolating from a narrow quantitative result.
 
-# 14 - Prediction
+# 14. Prediction
 
 Best guess for an outcome given some meaningfully associated data.
 
