@@ -790,7 +790,7 @@ $$
 \end{array}\right]
 $$
 
-![example one a](images/fiveexonea.png)
+![example one a](linear/fiveexonea.png)
 
 PARALLELOGRAM RULE FOR ADDITION. Fourth point of the parallelogram made up by the point (0, 0) and the two vectors being added together.
 
@@ -824,7 +824,7 @@ $$
 \end{array}\right]
 $$
 
-![example one b](images/fiveexoneb.png)
+![example one b](linear/fiveexoneb.png)
 
 ## VECTORS IN $\mathbb{R}^n$
 
@@ -887,11 +887,11 @@ $$
 
 Display the vectors $\overrightarrow{u}, 2 \overrightarrow{u}$ and $\frac{1}{2} \overrightarrow{u}$ on a graph.
 
-![exercise one a](images/fiveextwoa.png)
+![exercise one a](linear/fiveextwoa.png)
 
-![exercise one b](images/fiveextwob.png)
+![exercise one b](linear/fiveextwob.png)
 
-![exercise one c](images/fiveextwoc.png)
+![exercise one c](linear/fiveextwoc.png)
 
 # 1.3.2 - Linear Combinations
 
@@ -919,7 +919,7 @@ $$
 
 Estimate the linear combination that generates vectors $\overrightarrow{u}$ and $\overrightarrow{w}$
 
-![six example one](images/sixexone.png)
+![six example one](linear/sixexone.png)
 
 $\overrightarrow{u} = 2v_1 - v_2$
 
