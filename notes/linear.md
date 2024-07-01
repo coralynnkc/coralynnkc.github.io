@@ -1075,7 +1075,7 @@ $$
 
 ## SPANS
 
-A vector equation $x_1\overrightarrow{a_1} + x_2 \overrightarrow{a_2} + ... + x_n \overrightarrow{a_n} = \overrightarrow{b}$ has the same solution set as the linear system whose augmented matrix is $\[\overrightarrow{a_1},\overrightarrow{a_2}...\overrightarrow{a_n}|\overrightarrow{b}\]$. Therefore, a vector equation only has a solution if the system is consistent.
+A vector equation $x_1\overrightarrow{a_1} + x_2 \overrightarrow{a_2} + ... + x_n \overrightarrow{a_n} = \overrightarrow{b}$ has the same solution set as the linear system whose augmented matrix is $\left[ \overrightarrow{a_1}, \overrightarrow{a_2}, \ldots, \overrightarrow{a_n} \mid \overrightarrow{b} \right]$. Therefore, a vector equation only has a solution if the system is consistent.
 
 If $\overrightarrow{v_1},\overrightarrow{v_2}...\overrightarrow{v_p}$ are in $\mathbb{R}^n$, then the set of linear combination is denoted SPAN $\{\overrightarrow{v_1},\overrightarrow{v_2},...,\overrightarrow{v_p}\}$ and is called the subset of $\mathbb{R}^n$ spanned. Essentially, SPAN $\{\overrightarrow{v_1},...\overrightarrow{v_p}\}$ is all vectors that can be written in the form $c_1 \overrightarrow{v_1} + c_2 \overrightarrow{v_2} + ... + c_p \overrightarrow{v_p} = b$ with $c_i$ scalars.
 
