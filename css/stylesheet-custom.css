@@ -5,63 +5,66 @@
 } */
 
 .half-background {
-    background: linear-gradient(to top, rgba(241, 196, 15, 128) 33%, transparent 33%);
+  background: linear-gradient(
+    to top,
+    rgba(241, 196, 15, 128) 33%,
+    transparent 33%
+  );
 }
 
 code.highlighter-rouge {
-    color: crimson; 
-    background-color: #f0f0f0;
-    padding-left: 4px;
-    padding-right: 4px;
+  color: crimson;
+  background-color: #f0f0f0;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 pre > code {
-    font-size: 10px;
-
+  font-size: 10px;
 }
 
 body {
-    background-color: #dfe6e9;
-    font-family: "Lato", sans-serif;
+  background-color: #e6e6fa;
+  font-family: "Lato", sans-serif;
 }
 
 blockquote {
-    background: #f9f9f9;
-    border-left: 5px solid #ccc;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
 }
 
 div.note-block {
-    background: #f9f9f9;
-    border-left: 5px solid #e74c3c;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
+  background: #f9f9f9;
+  border-left: 5px solid #e74c3c;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
 }
 
 strong.note-block {
-    color: #e74c3c;
+  color: #e74c3c;
 }
 
 .title {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 .document {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* The Sidebar in Classes */
 .contents {
-    position: fixed;
-    height: 90%;
-    width: calc(50% - 355px);
-    right: 0;
-    top: 20px;
-    overflow-y: scroll;
-    /* overflow: hidden; */
+  position: fixed;
+  height: 90%;
+  width: calc(50% - 355px);
+  right: 0;
+  top: 20px;
+  overflow-y: scroll;
+  /* overflow: hidden; */
 }
 
 /* Sidebar */
@@ -77,36 +80,37 @@ strong.note-block {
 }
 
 .topbar {
-    display: none;
+  display: none;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 930px) {
-    .sidenav {
-        display: none;
-    }
+  .sidenav {
+    display: none;
+  }
 
-    .contents {
-        display: none;
-    }
+  .contents {
+    display: none;
+  }
 
-    .topbar {
-        display: block;
-    }
+  .topbar {
+    display: block;
+  }
 }
 
 .fixed {
-    position: sticky;
+  position: sticky;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
 img {
-    width: 100%
+  width: 100%;
 }
