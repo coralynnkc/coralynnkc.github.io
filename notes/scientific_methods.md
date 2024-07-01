@@ -71,3 +71,9 @@ Other problems:
 
 1. Proximity. 'What is the cause of World War II' is unanswerable.
 2. Unanswerable questions. It's impossible to answer what the effect will be on an individual, only for a population based on a representative sample.
+
+# 2 - Always Compare
+
+Correlation does not imply causation.
+
+SELECTING ON THE DEPENDENT VARIABLE. Including observations only with particular outcomes.
