@@ -117,7 +117,7 @@ $$
 \bar{Y}_{1, T=1} - \bar{Y}_{0, T=0} = \bar{Y}_{1, T=0} - \bar{Y}_{0, T=0} \rightarrow \bar{Y}_{1, T=1} = \bar{Y}_{1, T=0}
 $$
 
-# 4 - BIAS & NOISE
+# 4 - Bias & Noise
 
 ## BIAS
 
@@ -155,7 +155,7 @@ $$
 \widehat{SE} = \sqrt{\frac{\widehat{Var(Y_0)}}{N-m}+\frac{\widehat{Var(Y_1)}}{m}}
 $$
 
-# 5 - EXPERIMENTS
+# 5 - Experiments
 
 ## CONFIDENCE INTERVALS
 
@@ -215,7 +215,7 @@ CONTAMINATION. Treatment subjects become control and vice versa.
 
 SPILLOVER. Treatment affects those in control.
 
-# 6 - REGRESSION
+# 6 - Regression
 
 Using observational data to mimic an experiment - once we control for enough things / make the comparison groups similar enough, the difference between the treatment & control groups is functionally random.
 
@@ -429,7 +429,7 @@ Problems:
 1. Studying the wrong outcome.
 2. Extrapolating from a narrow quantitative result.
 
-# 14 - PREDICTION
+# 14 - Prediction
 
 Best guess for an outcome given some meaningfully associated data.
 
