@@ -1,0 +1,11 @@
+<div class="sidenav">
+    <a href="/">Coralynn Yang</a><br />
+  <hr />
+  <a {% if include.active == "notes" %} style="font-weight: bold;" {% endif %} href="/notes">Notes</a><br />
+</div>
+
+<div hidden class="topbar">
+<div class="ui secondary pointing menu">
+  <a href="/" class="{% if include.active == "home" %}active{% endif %} item">Home</a>
+  <a href="/notes" class="{% if include.active == "notes" %}active{% endif %} item">Notes</a>
+</div></div>
