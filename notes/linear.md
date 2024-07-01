@@ -1498,7 +1498,7 @@ $$
 
 Find:
 
-1. $A(\overrightarrow{u}+ \overrightarrow{v})$
+1\. $A(\overrightarrow{u}+ \overrightarrow{v})$
 
 ---
 
@@ -1540,7 +1540,7 @@ $$
 \end{array}\right]
 $$
 
-2. $A \overrightarrow{u} + A \overrightarrow{v}$
+2\. $A \overrightarrow{u} + A \overrightarrow{v}$
 
 ---
 
@@ -1613,7 +1613,7 @@ $$
 
 Find:
 
-1. $A(c \overrightarrow{u})$
+1\. $A(c \overrightarrow{u})$
 
 ---
 
@@ -1657,7 +1657,7 @@ $$
 \end{array}\right]
 $$
 
-2. $c(A \overrightarrow{u})$
+2\. $c(A \overrightarrow{u})$
 
 ---
 
