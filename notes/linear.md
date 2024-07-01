@@ -4,7 +4,7 @@ type: note
 title: Linear Algebra
 ---
 
-# 1.1.1 - SYSTEMS OF LINEAR EQUATIONS
+# 1.1.1 - Systems of Linear Equations
 
 ## WRITING SYSTEM
 
@@ -395,7 +395,7 @@ $$
 
 $$(1, 0, 1)$$
 
-# 1.1.2 - SOLVE SYSTEMS OF LINEAR EQUATIONS IN AUGMENTED MATRICES USING ROW OPERATIONS
+# 1.1.2 - Solve Systems of Linear Equations using Augmented Matrices
 
 $$x - 2y - 2z = b_1$$
 
@@ -506,7 +506,7 @@ $$
 
 ALL SOLUTIONS. $\overrightarrow{x} = \overrightarrow{x_p} + C * \overrightarrow{x_s}$
 
-# 1.2.1 - ROW REDUCTION AND ECHELON FORM.
+# 1.2.1 - Row Reduction & Echelon Form
 
 ECHELON FORM. 'TRIANGLE FORM'
 
@@ -611,7 +611,7 @@ $$
 
 $$(5,3,-1)$$
 
-# 1.2.2 - SOLUTION SETS AND FREE VARIABLES
+# 1.2.2 - Solution Sets & Free Variables
 
 $$
 \left[\begin{array}{ccc:c}
@@ -728,7 +728,7 @@ $x_2$ is free
 
 $x_3 = 3$
 
-# 1.3.1 - VECTOR EQUATIONS
+# 1.3.1 - Vector Equations
 
 VECTOR. An ordered list of numbers.
 
@@ -893,7 +893,7 @@ Display the vectors $\overrightarrow{u}, 2 \overrightarrow{u}$ and $\frac{1}{2} 
 
 ![exercise one c](images/fiveextwoc.png)
 
-# 1.3.2 - LINEAR COMBINATIONS
+# 1.3.2 - Linear Combinations
 
 The vector defined by $y = c_1v_1 + c_2v_2 + ... + c_nv_n$ where $c_i$ are scalars and $v_i$ are vectors is called a linear combination of $\overrightarrow{v_1}, \overrightarrow{v_2}, ... \overrightarrow{v_n}$ with weights $c_1, c_2, ..., c_n$.
 
@@ -1271,7 +1271,7 @@ $h = -17$
 
 $h$ must be $-17$ for $b$ to be in the span $\{a_1,a_2\}$
 
-# 1.4.1 - THE MATRIX EQUATION $Ax=b$
+# 1.4.1 - The Matrix Equation $Ax=b$
 
 If $A$ is a $m \times n$ matrix with columns $a_1, a_2, ..., a_n$ and if $x \in \mathbb{R}^n$ then $Ax$ is the linear combination of the columns of $A$ using the corresponding entires in $x$ as weights:
 
@@ -1476,7 +1476,7 @@ $$
 
 INCONSISTENT
 
-# 1.4.2 - COMPUTATION OF $Ax$
+# 1.4.2 - Computation of $Ax$
 
 ## ROW-VECTOR RULE FOR COMPUTING $Ax$
 
