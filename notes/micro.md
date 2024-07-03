@@ -182,7 +182,7 @@ Analyzing changes in equilibrium:
 
 ELASTICITY. Measure of the responsiveness of $Q^d$ or $Q^s$ to a change in one of its determinants.
 
-# DEMAND
+## DEMAND
 
 PRICE ELASTICITY OF DEMAND. How much the quantity demanded of a good responds to a change in the price of that good.
 
@@ -437,7 +437,7 @@ Social and private incentives differ, and the private incentives outweigh the so
 
 The government can define property rights and unleash market forces.
 
-# 9. COSTS OF PRODUCTION
+# 9. Costs of Production
 
 COSTS OF PRODUCTION. All the costs of the inputs such as wages, raw materials, rent, electricity, machinery, etc.
 
