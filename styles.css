@@ -1,0 +1,124 @@
+:root {
+  --text: #111;
+  --link: #1a0dab;
+  --muted: #666;
+  --card-border: #e3e3e3;
+  --card-bg: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 40px 24px;
+  max-width: 760px;
+}
+
+nav {
+  flex: 0 0 110px;
+  text-align: right;
+  padding-top: 4px;
+}
+
+nav a {
+  display: block;
+  margin-bottom: 2px;
+}
+
+nav a.current {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+main {
+  flex: 1 1 auto;
+  max-width: 460px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+img.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+main p {
+  margin: 0 0 16px;
+}
+
+.contact a {
+  white-space: nowrap;
+}
+
+/* Reflections — coming soon */
+.coming-soon {
+  color: var(--muted);
+}
+
+/* Snippets — masonry */
+.masonry {
+  column-count: 2;
+  column-gap: 16px;
+}
+
+.card {
+  break-inside: avoid;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin: 0 0 16px;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.card .placeholder {
+  color: #bbb;
+}
+
+@media (max-width: 600px) {
+  .layout {
+    flex-direction: column;
+    gap: 24px;
+    padding: 28px 20px;
+  }
+  nav {
+    flex: none;
+    text-align: left;
+  }
+  main {
+    max-width: 100%;
+  }
+}
