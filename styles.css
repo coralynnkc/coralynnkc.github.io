@@ -1,80 +1,87 @@
-:root {
-  --text: #111;
-  --link: #1a0dab;
-  --muted: #666;
-  --card-border: #e3e3e3;
-  --card-bg: #fafafa;
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #333;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-  color: var(--text);
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+a {
+  color: #0864c7;
 }
 
 .layout {
   display: flex;
   align-items: flex-start;
-  gap: 48px;
-  padding: 40px 24px;
-  max-width: 760px;
+  padding: 30px 24px;
 }
 
 nav {
-  flex: 0 0 110px;
+  flex: 0 0 150px;
+  margin-right: 25px;
   text-align: right;
-  padding-top: 4px;
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 nav a {
   display: block;
+  color: #0864c7;
   margin-bottom: 2px;
 }
 
-nav a.current {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 700;
-}
-
 main {
-  flex: 1 1 auto;
-  max-width: 460px;
-}
-
-a {
-  color: var(--link);
-  text-decoration: underline;
+  flex: 0 1 500px;
+  margin-top: -15px;
 }
 
 img.photo {
-  width: 100%;
-  height: auto;
+  object-fit: cover;
+  width: 400px;
+  max-width: 100%;
+  height: 400px;
+  border-radius: 10px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 main p {
-  margin: 0 0 16px;
+  margin: 0 0 1em;
+  line-height: 18px;
 }
 
-.contact a {
-  white-space: nowrap;
+p.notop {
+  margin-top: 0;
 }
 
 /* Reflections — coming soon */
 .coming-soon {
-  color: var(--muted);
+  color: #aaa;
+}
+
+/* Reflections */
+.reflection {
+  margin-bottom: 32px;
+}
+
+.reflection h2 {
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  margin: 0 0 4px;
+}
+
+.reflection .source {
+  font-size: 10px;
+  color: #aaa;
+  margin: 0 0 1em;
+  line-height: 18px;
+}
+
+.reflection p {
+  margin: 0 0 1em;
+  line-height: 18px;
 }
 
 /* Snippets — masonry */
@@ -85,40 +92,34 @@ main p {
 
 .card {
   break-inside: avoid;
-  border: 1px solid var(--card-border);
-  background: var(--card-bg);
+  border: 1px solid #eee;
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 12px 14px;
   margin: 0 0 16px;
-}
-
-.card h3 {
-  margin: 0 0 6px;
-  font-size: 14px;
-  font-weight: 700;
 }
 
 .card p {
   margin: 0;
-  font-size: 14px;
-  color: #333;
+  line-height: 18px;
 }
 
-.card .placeholder {
-  color: #bbb;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .layout {
     flex-direction: column;
-    gap: 24px;
-    padding: 28px 20px;
+    padding: 24px 20px;
   }
   nav {
     flex: none;
+    margin-right: 0;
+    margin-bottom: 20px;
     text-align: left;
   }
   main {
-    max-width: 100%;
+    flex: none;
+    width: 100%;
+    margin-top: 0;
+  }
+  img.photo {
+    width: 100%;
   }
 }
