@@ -84,6 +84,51 @@ p.notop {
   line-height: 18px;
 }
 
+.reflection ul {
+  margin: 0 0 1em;
+  padding-left: 18px;
+}
+
+.reflection li {
+  margin: 0 0 1em;
+  line-height: 18px;
+}
+
+.reflection figure {
+  margin: 0 0 1em;
+}
+
+.reflection .figure-row {
+  display: flex;
+  gap: 12px;
+}
+
+.reflection .figure-row figure {
+  flex: 1;
+  min-width: 0;
+}
+
+.reflection figure img {
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  display: block;
+}
+
+.reflection figure figcaption {
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.reflection figure + figure {
+  margin-top: 12px;
+}
+
+.reflection .figure-row figure + figure {
+  margin-top: 0;
+}
+
 /* Snippets — masonry */
 .masonry {
   column-count: 2;
@@ -121,5 +166,11 @@ p.notop {
   }
   img.photo {
     width: 100%;
+  }
+  .reflection .figure-row {
+    flex-direction: column;
+  }
+  .reflection .figure-row figure + figure {
+    margin-top: 12px;
   }
 }

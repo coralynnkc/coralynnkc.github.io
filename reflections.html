@@ -16,6 +16,185 @@
       </nav>
       <main>
         <article class="reflection">
+          <h2>Lessons I learned from overhauling the NLP Suite</h2>
+          <p class="source">
+            June 26, 2026 · Porting the NLP Suite from a
+            <a
+              href="https://github.com/NLP-Suite/NLP-Suite"
+              target="_blank"
+              rel="noopener"
+              >desktop app</a
+            >
+            to the
+            <a
+              href="https://github.com/coralynnkc/nlp-suite-new"
+              target="_blank"
+              rel="noopener"
+              >web</a
+            >.
+          </p>
+          <p>
+            I spent a few weeks working on turning the NLP Suite, about 100,000
+            lines of Python tied to a tkinter GUI, into a containerized web app.
+            I went in thinking the hard part would be bug fixes on the back-end,
+            editing decades-old Python. Almost everything I actually learned was
+            about the parts around it.
+          </p>
+          <div class="figure-row">
+            <figure>
+              <img
+                src="assets/nlp-suite-desktop.png"
+                alt="The original NLP Suite as a tkinter desktop application, a dense menu of buttons and dropdowns."
+              />
+              <figcaption>Before: the tkinter desktop app.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/nlp-suite-web.png"
+                alt="The ported NLP Suite as a web app, a searchable grid of tool cards with category tags."
+              />
+              <figcaption>After: the same tools in the browser.</figcaption>
+            </figure>
+          </div>
+          <ul>
+            <li>
+              Architectural decisions are much more tangled than I expected.
+              Almost every choice had three or four real alternatives that
+              interacted with each other: tkinter vs. customtkinter vs. leaving
+              the desktop GUI behind entirely, Docker vs. conda vs. a native
+              bundle, one big container vs. several services. 'Full-stack
+              communication' turned out to be its own hard problem, since
+              getting a browser, a Django UI, a FastAPI agent, and two Java
+              services to actually talk to each other took more thought than any
+              single analysis function. What helped was being honest about which
+              decisions were basically forced by constraints and which ones were
+              genuinely arguable.
+            </li>
+            <li>
+              Hygiene is much cheaper to build in than to bolt on later. CI,
+              linting, and unit tests to catch regressions are easy to skip when
+              you're moving fast. I learned why you shouldn't the hard way: the
+              codebase predated all of it, so the first time I pointed a type
+              checker at it I got around a thousand findings. Fixing that all at
+              once is impossible, so I had to ratchet it in file by file. If the
+              rigor had been there from the start it would have been close to
+              free, and instead retrofitting it surfaced a lot of avoidable
+              bugs. The lesson I'm taking forward is to write the test and turn
+              on the linter while I'm writing the code, not after.
+            </li>
+            <li>
+              This matters more with AI, not less. It's easy to one-shot
+              something that works once, and much harder to keep it working over
+              time, and AI makes the first part almost trivial. That made it
+              tempting to skip the structure that keeps a thing maintainable.
+              The gap between 'it ran' and 'I can safely change it three months
+              from now' is
+              <a
+                href="https://rico.codes/loops-not-prompts"
+                target="_blank"
+                rel="noopener"
+                >exactly</a
+              >
+              where the tests, the CI, and a clear architecture earn their keep.
+            </li>
+            <li>
+              Frontend work is real and high-leverage. I used to think of the
+              interface as decoration sitting on top of the 'real' logic.
+              Porting this changed my mind. The UI is the first and last thing a
+              user touches, and it's what decides whether they trust the tool
+              enough to use it at all. The analysis code could be perfect and
+              still go unused behind a confusing screen, so hand-building the
+              Django forms with some care wasn't extra polish; from the user's
+              side it basically is the project. I still have a lot to learn and
+              <a
+                href="https://michalmalewicz.medium.com/ui-design-direction-2026-2027-2b4b6eb88336"
+                target="_blank"
+                rel="noopener"
+                >read</a
+              >
+              about UI design, but this was a nice start.
+            </li>
+            <li>
+              Document everything, especially now. The reason a decision was
+              made disappears fast, and AI-generated code makes this worse
+              because you can produce a lot of plausible code without ever
+              recording why any of it exists. Two ideas I found useful: the
+              notion of
+              <a
+                href="https://addyosmani.com/blog/intent-debt/"
+                target="_blank"
+                rel="noopener"
+                >intent debt</a
+              >, the growing gap between what your code does and what you
+              actually meant it to do, and the rule that
+              <a
+                href="https://www.jimmont.com/llm-style-token-costs"
+                target="_blank"
+                rel="noopener"
+                >comments should explain why, not what</a
+              >. So I started leaving the why in comments and a tech-debt doc,
+              like the desktop-only features I switched off on purpose and
+              noted, so the next person knows exactly where the seam is. The
+              next person, of course, is me, three months from now, having
+              forgotten every reason I had.
+            </li>
+          </ul>
+        </article>
+        <article class="reflection">
+          <h2>Gratification is good, actually!</h2>
+          <p class="source">
+            June 23, 2026 ·
+            <a
+              href="https://www.theatlantic.com/ideas/2026/06/instant-gratification-psychology-economy/687550/"
+              target="_blank"
+              rel="noopener"
+              >The Cult of Delayed Gratification Is a Lie</a
+            >.
+          </p>
+          <p>
+            I've been told to delay gratification for as long as I can remember:
+            don't buy the nice thing for yourself now & save for retirement,
+            finish the homework before the fun part, the second marshmallow is
+            always worth more than the first.
+            <a
+              href="https://jamesclear.com/atomic-habits"
+              target="_blank"
+              rel="noopener"
+              >Atomic Habits</a
+            >, which is more or less how I try to operate, runs on the same
+            premise: a one percent improvement repeated daily is what separates
+            where you end up from where you started. The problem is that it only
+            works if you can stay motivated, and motivation is hard to hold onto
+            when the payoff is far away and you can't cleanly trace it back to
+            any one choice you made to get there (which, to his credit, Clear
+            explicitly acknowledges).
+          </p>
+          <p>
+            Engineering is one of the few careers that seems to reflect the
+            opposite. The code compiles or it doesn't; CI passes or it fails;
+            the change I made is live in prod or sitting on a dashboard by the
+            end of the day. There's a tight, immediate loop between doing a
+            thing and finding out whether it worked, and the small jolt of a
+            green checkmark is real even when the larger project is months from
+            finished. I think a lot of why I like the work is that it refuses to
+            defer all its rewards into some distant payoff: you get to feel
+            something land now, repeatedly, on the way to the thing that takes a
+            long time.
+          </p>
+          <p>
+            Importantly, the two aren't actually mutually exclusive. The cult of
+            delayed gratification quietly treats the immediate kind as something
+            close to sinful: a small pleasure you're supposed to trade away for
+            a bigger one later. But the squish and the second marshmallow aren't
+            in competition. The green checkmark doesn't come at the expense of
+            the months-long project; it's the thing that keeps you at the desk
+            long enough for the slow part to pay off at all. I still believe the
+            big things get built gradually, but I've stopped filing the small,
+            immediate gratification of doing one thing well under suspicion. It
+            isn't a tax on the long game, it's something to celebrate.
+          </p>
+        </article>
+        <article class="reflection">
           <h2>AI &amp; the Experience Machine</h2>
           <p class="source">
             June 18, 2026 ·
