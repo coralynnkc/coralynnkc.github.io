@@ -115,6 +115,35 @@ p.notop {
   display: block;
 }
 
+.reflection figure a {
+  display: block;
+  cursor: pointer;
+}
+
+/* Pure-CSS lightbox via :target */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.lightbox:target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox img {
+  max-width: min(100%, 1000px);
+  max-height: 100%;
+  border-radius: 6px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
 .reflection figure figcaption {
   font-size: 10px;
   color: #aaa;
