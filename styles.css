@@ -158,6 +158,22 @@ p.notop {
   margin-top: 0;
 }
 
+/* Reflections — table of contents */
+.toc {
+  flex: 0 0 120px;
+  margin-left: 70px;
+  position: sticky;
+  top: 30px;
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.toc a {
+  display: block;
+  color: #0864c7;
+  margin-bottom: 6px;
+  line-height: 14px;
+}
+
 /* Snippets — masonry */
 .masonry {
   column-count: 2;
@@ -201,5 +217,8 @@ p.notop {
   }
   .reflection .figure-row figure + figure {
     margin-top: 12px;
+  }
+  .toc {
+    display: none;
   }
 }
