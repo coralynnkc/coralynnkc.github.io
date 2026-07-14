@@ -15,6 +15,43 @@
         <a href="snippets.html">Snippets</a>
       </nav>
       <main>
+        <article class="reflection" id="spec-driven-development">
+          <h2>Spec-driven development</h2>
+          <p class="source">
+            July 14, 2026 ·
+            <a
+              href="https://levelup.gitconnected.com/the-best-developer-is-no-longer-the-one-who-writes-the-best-code-996e8ed0869b"
+              target="_blank"
+              rel="noopener"
+              >The Best Developer Is No Longer the One Who Writes the Best
+              Code</a
+            >.
+          </p>
+          <p>
+            For as long as I've been writing software, I treated code as the
+            source of truth, the only trustworthy description of what a system
+            really does. This piece inverts that: once code is nearly free to
+            generate, a developer's value stops being how fast you can turn an
+            idea into working code and becomes two harder things: how precisely
+            you can say what you actually want, and how rigorously you check
+            whether you got it. Intent becomes the source of truth, and the code
+            is just one possible realization of it.
+          </p>
+          <p>
+            What made it land for me is one line: 'all tests passed' is not the
+            same as 'matches my intent', and the second is now the harder job. I
+            think it caught something about my own path I hadn't put words to.
+            Nobody teaches you to write tests in school. Every class I took
+            graded whether the code ran, not whether I could prove it did the
+            right thing on the case I hadn't thought of, so verification was
+            something I was learning for the first time on the job, at exactly
+            the moment the industry decided it was the whole game. Writing a
+            test that pins down what a change is actually supposed to do, like
+            confirming a donation still records correctly when the input is
+            malformed, felt like the unglamorous part when I started. It turns
+            out to be the part with nowhere left to hide.
+          </p>
+        </article>
         <article class="reflection" id="ai-labor">
           <h2>AI &amp; Labor</h2>
           <p class="source">
@@ -429,6 +466,7 @@
         </article>
       </main>
       <aside class="toc">
+        <a href="#spec-driven-development">Specs</a>
         <a href="#ai-labor">Labor</a>
         <a href="#nlp-suite">NLP Suite</a>
         <a href="#gratification">Gratification</a>
